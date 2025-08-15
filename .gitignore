@@ -1,0 +1,42 @@
+# Node.js dependencies
+node_modules/
+
+# Build output
+dist/
+build/
+out/
+
+# TypeScript build cache
+*.tsbuildinfo
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Editor and IDE settings
+.vscode/
+.idea/
+*.swp
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+tmp/
+temp/
+
+# Monorepo-specific ignores
+# (in case workspaces generate local build outputs)
+packages/*/dist/
+apps/*/dist/
+packages/*/node_modules/
+apps/*/node_modules/
