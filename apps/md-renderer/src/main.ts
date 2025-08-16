@@ -1,6 +1,6 @@
 import MarkdownIt from 'markdown-it';
 import markdownText from '../docs/test.md?raw';
-import parseCSV from '../../../packages/src/parseDSL';
+import parseCSV from '../../../packages/src/parseCSV';
 import { renderBarChart } from '../../../packages/src/render/renderBarChart';
 import { renderLineChart } from '../../../packages/src/render/renderLineChart';
 import { renderTable } from '../../../packages/src/render/renderTable';
