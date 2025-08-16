@@ -1,6 +1,39 @@
 import MarkdownIt from 'markdown-it'
 import parseCSV from './parseCSV';
 
+export function createMarkdownRenderer(): MarkdownIt {
+  const md = new MarkdownIt()
+  const defaultFence = md.renderer.rules.fence!
+
+  // Override the default `fence` rule to handle custom CSV blocks
+  md.renderer.rules.fence = (tokens, idx, options, env, self) => {
+    const token = tokens[idx]
+    const info = token.info.trim()
+    const [langName] = info.split(/\s+/)
+
+    // Handle custom CSV code blocks
+    if (langName === 'csv') {
+      try {
+        const parsed = parseCSV(token.content, info)
+        console.log('Parsed CSV:', parsed);
+
+        // Render the original code block (for reference/debugging)
+        const codeHtml = `<pre><code class="language-csv">${md.utils.escapeHtml(token.content)}</code></pre>`
+
+        // Return both the original code block and a chart/table placeholder
+        return `${codeHtml}\n${generateChartHtml(parsed)}`
+      } catch (e) {
+        console.error('CSV parsing error:', e);
+      }
+    }
+
+    // Fallback to default Markdown-It behavior
+    return defaultFence(tokens, idx, options, env, self)
+  }
+
+  return md
+}
+
 function generateChartHtml(parsed: any) {
   const id = `chart-${Math.random().toString(36).slice(2)}` // Generate unique chart ID
   const encoded = encodeURIComponent(JSON.stringify(parsed)) // Encode parsed data to safely embed in HTML
