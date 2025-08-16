@@ -7,6 +7,6 @@ export default defineConfig({
       '@': path.resolve(__dirname, 'src'),
     },
   },
-  // .md 파일을 raw 텍스트로 import할 수 있도록 설정
+  // Allow importing .md files as raw text
   assetsInclude: ['**/*.md'],
 });
