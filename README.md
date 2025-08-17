@@ -1,12 +1,13 @@
 <div align="center">
   <img src="apps/web/src/assets/logo.svg" alt="vizard logo" width="120" />
-  <p style="font-size: 30px; font-weight: bold;">vizard</p>
+  <p style="font-size: 60px; font-weight: bold;">vizard</p>
   <p>🪄 Open Source Markdown-based Data Visualization Tool</p>
   <p>
     <a href="https://opensource-brainband.github.io/vizard/"><img alt="Homepage" src="https://img.shields.io/badge/Homepage-vizard-blue?style=flat-square"></a>
     <a href="LICENSE"><img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square"></a>
   </p>
 </div>
+
 
 
 
@@ -18,12 +19,16 @@ Just enter your data in a code block and it will be automatically rendered as ba
 
 
 
+
+
 ## ✨ Features
 
 - **Automatic CSV/DSL Chart Rendering**
 - **Live Preview**
 - **Easy Extensibility**
 - **Quick Start**
+
+
 
 
 
@@ -52,6 +57,8 @@ vizard/
 
 
 
+
+
 ## 🚀 Getting Started
 
 ### 1. Installation
@@ -69,6 +76,8 @@ npm run dev
 ```
 
 Open your browser and go to http://localhost:5173
+
+
 
 
 
@@ -92,9 +101,13 @@ Date,Sales
 
 
 
+
+
 ## 🖼 Example
 
 <img width="930" height="428" alt="Image" src="https://github.com/user-attachments/assets/7d73fe31-8728-4181-829e-1521c30d0fd0" />
+
+
 
 
 
@@ -110,9 +123,13 @@ Date,Sales
 
 
 
+
+
 ## 📄 License
 
 This project is licensed under the MIT License.
+
+
 
 
 
