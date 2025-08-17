@@ -1,4 +1,4 @@
-import markdownText from '../docs/test.md?raw';
+import markdownText from '../docs/sample.md?raw';
 import { createMarkdownRenderer } from '../../../packages/src/markdown';
 import { renderBarChart } from '../../../packages/src/render/renderBarChart';
 import { renderLineChart } from '../../../packages/src/render/renderLineChart';

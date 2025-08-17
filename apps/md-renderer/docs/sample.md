@@ -1,4 +1,4 @@
-#### csv test for md-renderer
+#### csv sample for md-renderer
 
 ```csv
 Date,Sales
