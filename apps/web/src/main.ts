@@ -2,6 +2,7 @@ import './style.css'
 import { createMarkdownRenderer, renderLineChart, renderBarChart, renderTable } from '../../../packages/core/src';
 import markdownText from '../docs/test.md?raw'
 import { welcomeHtml } from './views/welcomeHtml'
+import { getMarkdownAppHtml } from './views/markdownAppHtml'
 
 const md = createMarkdownRenderer()
 
