@@ -32,6 +32,7 @@ export default function parseCSV(
     // Parse header row
     const headers = lines[0].split(',').map(h => h.trim())
     if (headers.length < 2) {
+        console.log(headers)
         throw new Error('CSV header requires at least 2 columns.')
     }
 
