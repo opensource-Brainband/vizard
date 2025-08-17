@@ -1,0 +1,15 @@
+<svg class="vizard-logo" viewBox="0 0 412 412" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M130.711 95C143.462 95 154.819 103.06 159.029 115.095L216.042 278.095C222.864 297.599 208.388 318 187.725 318L176 318L83.0001 95L130.711 95Z" fill="url(#paint0_linear_70_8)"/>
+<path d="M298 142L237.414 298.812C232.946 310.375 221.826 318 209.43 318H176L298 142Z" fill="url(#paint1_linear_70_8)"/>
+<path d="M298 81L307.443 111.557H338L313.279 130.443L322.721 161L298 142.115L273.279 161L282.721 130.443L258 111.557H288.557L298 81Z" fill="black"/>
+<defs>
+<linearGradient id="paint0_linear_70_8" x1="117" y1="94" x2="206" y2="318.5" gradientUnits="userSpaceOnUse">
+<stop stop-color="#888888"/>
+<stop offset="1"/>
+</linearGradient>
+<linearGradient id="paint1_linear_70_8" x1="298" y1="142" x2="202" y2="318" gradientUnits="userSpaceOnUse">
+<stop/>
+<stop offset="1" stop-color="#444444"/>
+</linearGradient>
+</defs>
+</svg>
