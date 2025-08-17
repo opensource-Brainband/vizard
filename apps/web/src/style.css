@@ -94,7 +94,7 @@ code {
 }
 
 /* SVG chart style */
-svg {
+svg:not(.vizard-logo) {
 	display: block;
 	margin: 0 auto;
 	background-color: #fff;
