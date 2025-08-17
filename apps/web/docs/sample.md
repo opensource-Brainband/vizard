@@ -1,4 +1,4 @@
-#### csv test for web
+#### csv sample for web
 
 ```csv
 Date,Sales
