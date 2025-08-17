@@ -3,6 +3,7 @@ import { createMarkdownRenderer, renderLineChart, renderBarChart, renderTable } 
 import markdownText from '../docs/test.md?raw'
 import { welcomeHtml } from './views/welcomeHtml'
 import { getMarkdownAppHtml } from './views/markdownAppHtml'
+import { showExportModal } from './utils/showExportModal'
 
 const md = createMarkdownRenderer()
 
