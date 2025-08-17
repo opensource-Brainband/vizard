@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="apps/web/src/assets/logo.svg" alt="vizard logo" width="300" />
+  <img src="apps/web/src/assets/logo.svg" alt="vizard logo" width="200" />
   <h1>vizard</h1>
   <p>🪄 Open Source Markdown-based Data Visualization Tool</p>
   <p>
