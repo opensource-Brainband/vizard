@@ -8,6 +8,21 @@
   </p>
 </div>
 
+
+## 📖 About
+
+**vizard** is an open source tool that allows you to easily visualize charts and tables from CSV/DSL data within markdown documents.  
+Just enter your data in a code block and it will be automatically rendered as bar charts, line charts, tables, and more.
+
+---
+
+## ✨ Features
+
+- **Automatic CSV/DSL Chart Rendering**
+- **Live Preview**
+- **Easy Extensibility**
+- **Quick Start**
+
 ---
 
 ## 📁 Project Structure
@@ -30,22 +45,6 @@ vizard/
 - **packages/src/render/**: Rendering functions for bar chart, line chart, table, etc.
 - **packages/src/parseCSV.ts**: CSV code block parsing function
 - **docs/**: Sample markdown and data
-
----
-
-## 📖 About
-
-**vizard** is an open source tool that allows you to easily visualize charts and tables from CSV/DSL data within markdown documents.  
-Just enter your data in a code block and it will be automatically rendered as bar charts, line charts, tables, and more.
-
----
-
-## ✨ Features
-
-- **Automatic CSV/DSL Chart Rendering**: Instantly visualize bar charts, line charts, and tables from code blocks in markdown
-- **Live Preview**: See results as you edit markdown in real time
-- **Easy Extensibility**: Easily add custom charts and styles
-- **Quick Start**: Use right away with minimal setup
 
 ---
 
@@ -103,12 +102,6 @@ Date,Sales
 
 ---
 
-## 🙌 Growing Vizard with the Community
-Vizard aims to create an ecosystem where anyone can freely extend and contribute.
-We look forward to your participation and feedback for a better data visualization experience!
-
----
-
 ## 📄 License
 
 This project is licensed under the MIT License.
@@ -116,4 +109,5 @@ This project is licensed under the MIT License.
 ---
 
 <div align="center">
-  <sub>Made with ❤️ by <a href="https://github.com/opensource-Brainband/vizard">vizard
+  <sub>Made with ❤️ by <a href="https://github.com/opensource-Brainband/vizard">vizard contributors</a></sub>
+</div>
