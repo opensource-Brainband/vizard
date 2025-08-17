@@ -1,6 +1,6 @@
 <div align="center">
-  <img src="apps/web/src/assets/logo.svg" alt="vizard logo" width="120" />
-  <p style="font-size: 60px; font-weight: bold;">vizard</p>
+  <img src="apps/web/src/assets/logo.svg" alt="vizard logo" width="300" />
+  <h1>vizard</h1>
   <p>🪄 Open Source Markdown-based Data Visualization Tool</p>
   <p>
     <a href="https://opensource-brainband.github.io/vizard/"><img alt="Homepage" src="https://img.shields.io/badge/Homepage-vizard-blue?style=flat-square"></a>
