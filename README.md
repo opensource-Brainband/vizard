@@ -9,12 +9,14 @@
 </div>
 
 
+
 ## 📖 About
 
 **vizard** is an open source tool that allows you to easily visualize charts and tables from CSV/DSL data within markdown documents.  
 Just enter your data in a code block and it will be automatically rendered as bar charts, line charts, tables, and more.
 
----
+
+
 
 ## ✨ Features
 
@@ -23,7 +25,8 @@ Just enter your data in a code block and it will be automatically rendered as ba
 - **Easy Extensibility**
 - **Quick Start**
 
----
+
+
 
 ## 📁 Project Structure
 
@@ -46,7 +49,8 @@ vizard/
 - **packages/src/parseCSV.ts**: CSV code block parsing function
 - **docs/**: Sample markdown and data
 
----
+
+
 
 ## 🚀 Getting Started
 
@@ -66,7 +70,8 @@ npm run dev
 
 Open your browser and go to http://localhost:5173
 
----
+
+
 
 ## 🛠️ Usage
 
@@ -84,13 +89,15 @@ Date,Sales
 </pre>
 </details>
 
----
+
+
 
 ## 🖼 Example
 
 <img width="930" height="428" alt="Image" src="https://github.com/user-attachments/assets/7d73fe31-8728-4181-829e-1521c30d0fd0" />
 
----
+
+
 
 ## 🤝 Contributing
 
@@ -100,13 +107,15 @@ Date,Sales
 4. Push to the branch: `git push origin feature/your-feature`
 5. Create a Pull Request.
 
----
+
+
 
 ## 📄 License
 
 This project is licensed under the MIT License.
 
----
+
+
 
 <div align="center">
   <sub>Made with ❤️ by <a href="https://github.com/opensource-Brainband/vizard">vizard contributors</a></sub>
