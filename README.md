@@ -71,7 +71,15 @@ npm install
 
 ### 2. Run
 
+#### For the web app:
 ```bash
+cd apps/web
+npm run dev
+```
+
+#### For the markdown renderer app:
+```bash
+cd apps/md-renderer
 npm run dev
 ```
 
@@ -82,21 +90,50 @@ Open your browser and go to http://localhost:5173
 
 
 
+
+## 📝 Chart Block Syntax
+
+You can render charts and tables by writing a CSV code block in your markdown.  
+The first line (info string) can include options like `title` and `type`.
+
+**Syntax:**
+<pre>
+```csv title="Chart Title" type="bar"
+Header1,Header2
+value1,value2
+...
+```
+</pre>
+
+
+
+**Options:**
+- `title` (optional): The chart or table title.
+- `type` (required): The visualization type.  
+  - `bar` : Bar chart  
+  - `line` : Line chart  
+  - `table` : Table
+
+
+
+
+
 ## 🛠️ Usage
 
 Simply enter a CSV code block in the markdown editor and the chart will be rendered automatically.
 
-<details>
+
 <summary>CSV Chart Example</summary>
 <pre>
 ```csv title="Sales Data" type="bar"
+# Only rendered as a chart in vizard, not on GitHub
 Date,Sales
 2021-01-01,100
 2021-01-02,150
 2021-01-03,120
 ```
 </pre>
-</details>
+
 
 
 
