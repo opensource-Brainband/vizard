@@ -123,7 +123,7 @@ value1,value2
 Simply enter a CSV code block in the markdown editor and the chart will be rendered automatically.
 
 
-<summary>CSV Chart Example</summary>
+**CSV Chart Example**
 <pre>
 ```csv title="Sales Data" type="bar"
 # Only rendered as a chart in vizard, not on GitHub
