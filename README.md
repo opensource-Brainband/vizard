@@ -123,6 +123,8 @@ value1,value2
 Simply enter a CSV code block in the markdown editor and the chart will be rendered automatically.
 
 
+
+
 **CSV Chart Example:**
 <pre>
 ```csv title="Sales Data" type="bar"
