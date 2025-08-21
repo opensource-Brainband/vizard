@@ -8,18 +8,10 @@
   </p>
 </div>
 
-
-
-
 ## 📖 About
 
 **vizard** is an open source tool that allows you to easily visualize charts and tables from CSV/DSL data within markdown documents.  
 Just enter your data in a code block and it will be automatically rendered as bar charts, line charts, tables, and more.
-
-
-
-
-
 
 ## ✨ Features
 
@@ -28,36 +20,46 @@ Just enter your data in a code block and it will be automatically rendered as ba
 - **Easy Extensibility**
 - **Quick Start**
 
-
-
-
-
-
 ## 📁 Project Structure
 
 ```
 vizard/
 ├── apps/
-│   ├── md-renderer/      # Markdown-based renderer app
-│   └── web/              # Web frontend app
+│   ├── md-renderer/           # Markdown preview & chart rendering app
+│   │   ├── docs/              # Sample markdown and data
+│   │   ├── public/
+│   │   └── src/
+│   │       ├── main.ts        # Entry point for md-renderer
+│   │       ├── parseTest.ts
+│   │       ├── style.css
+│   │       ├── typescript.svg
+│   │       └── ...
+│   └── web/                   # Web frontend app
+│       ├── docs/              # Sample markdown and data
+│       └── src/
+│           ├── main.ts        # Entry point for web app
+│           ├── assets/        # Static assets (logo, etc.)
+│           ├── types/         # Type definitions
+│           ├── utils/         # Utility functions (modals, etc.)
+│           └── views/         # HTML templates
 ├── packages/
 │   └── src/
-│       ├── render/       # Chart/table rendering functions
-│       ├── parseCSV.ts   # CSV parser
-│       └── markdown.ts   # Markdown utilities
+│       ├── render/
+│       │   ├── renderBarChart.ts
+│       │   ├── renderLineChart.ts
+│       │   └── renderTable.ts
+│       ├── parseCSV.ts        # CSV/DSL parser
+│       ├── markdown.ts        # Markdown renderer utilities
+│       └── index.ts
 └── README.md
 ```
 
 - **apps/md-renderer/**: Markdown preview and chart rendering app
-- **apps/web/**: Web frontend app
+- **apps/web/**: Web frontend app (with assets, utils, views, types, etc.)
 - **packages/src/render/**: Rendering functions for bar chart, line chart, table, etc.
-- **packages/src/parseCSV.ts**: CSV code block parsing function
-- **docs/**: Sample markdown and data
-
-
-
-
-
+- **packages/src/parseCSV.ts**: CSV/DSL code block parsing function
+- **packages/src/markdown.ts**: Markdown renderer and utilities
+- **docs/**: Sample markdown and data (located under each app)
 
 ## 🚀 Getting Started
 
@@ -85,12 +87,6 @@ npm run dev
 
 Open your browser and go to http://localhost:5173
 
-
-
-
-
-
-
 ## 📝 Chart Block Syntax
 
 You can render charts and tables by writing a CSV code block in your markdown.  
@@ -105,8 +101,6 @@ value1,value2
 ```
 </pre>
 
-
-
 **Options:**
 - `title` (optional): The chart or table title.
 - `type` (required): The visualization type.  
@@ -114,16 +108,9 @@ value1,value2
   - `line` : Line chart  
   - `table` : Table
 
-
-
-
-
 ## 🛠️ Usage
 
 Simply enter a CSV code block in the markdown editor and the chart will be rendered automatically.
-
-
-
 
 **CSV Chart Example:**
 <pre>
@@ -136,20 +123,9 @@ Date,Sales
 ```
 </pre>
 
-
-
-
-
-
-
 ## 🖼 Example
 
 <img width="930" height="428" alt="Image" src="https://github.com/user-attachments/assets/7d73fe31-8728-4181-829e-1521c30d0fd0" />
-
-
-
-
-
 
 ## 🤝 Contributing
 
@@ -158,12 +134,6 @@ Date,Sales
 3. Commit your changes: `git commit -m 'Add some feature'`
 4. Push to the branch: `git push origin feature/your-feature`
 5. Create a Pull Request.
-
-
-
-
-
-
 
 <div align="center">
   <sub>Made with ❤️ by <a href="https://github.com/opensource-Brainband/vizard">vizard contributors</a></sub>
