@@ -25,14 +25,14 @@ window.addEventListener('DOMContentLoaded', () => {
         
         // Render chart based on chart type
         switch (chartType) {
-          case 'line':
-            renderLineChart(el, chartData)
+          case 'table':
+            renderTable(el, chartData)
             break
           case 'bar':
             renderBarChart(el, chartData)
             break
-          default:
-            renderTable(el, chartData)
+          case 'line':
+            renderLineChart(el, chartData)
             break
         }
       })

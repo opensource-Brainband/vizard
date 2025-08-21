@@ -181,14 +181,14 @@ function renderMarkdownApp(root: HTMLElement) {
 					if (!encoded) return
 					const chartData = JSON.parse(decodeURIComponent(encoded))
 					switch (chartType) {
-						case 'line':
-							renderLineChart(el, chartData)
+						case 'table':
+							renderTable(el, chartData)
 							break
 						case 'bar':
 							renderBarChart(el, chartData)
 							break
-						default:
-							renderTable(el, chartData)
+						case 'line':
+							renderLineChart(el, chartData)
 							break
 					}
 				})

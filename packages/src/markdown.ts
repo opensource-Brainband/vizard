@@ -1,6 +1,8 @@
 import MarkdownIt from 'markdown-it'
 import parseCSV from './parseCSV';
 
+const chartType: string[] = ["table", "bar", "line"]
+
 export function createMarkdownRenderer(): MarkdownIt {
   const md = new MarkdownIt()
   const defaultFence = md.renderer.rules.fence!
@@ -16,12 +18,14 @@ export function createMarkdownRenderer(): MarkdownIt {
       try {
         const parsed = parseCSV(token.content, info)
         console.log('Parsed CSV:', parsed);
-
-        // Render the original code block (for reference/debugging)
-        const codeHtml = `<pre><code class="language-csv">${md.utils.escapeHtml(token.content)}</code></pre>`
-
+        
         // Return both the original code block and a chart/table placeholder
-        return `${codeHtml}\n${generateChartHtml(parsed)}`
+        if (chartType.includes(parsed.type)) {
+          return `${generateChartHtml(parsed)}`
+        }
+        
+        // Render the original code block (for reference/debugging)
+        return `<pre><code class="language-csv">${md.utils.escapeHtml(token.content)}</code></pre>`
       } catch (e) {
         console.error('CSV parsing error:', e);
       }
