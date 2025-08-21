@@ -12,8 +12,8 @@ export default function parseCSV(
     info: string
 ): ParsedCSV {
     // Extract title and type from info string using regex
-    const titleMatch = info.match(/title="([^"]+)"/)
-    const typeMatch = info.match(/type="([^"]+)"/)
+    const titleMatch = info.match(/title\s*=\s*(?:"([^"]*)"|'([^']*)')/)
+    const typeMatch = info.match(/type\s*=\s*(?:"([^"]*)"|'([^']*)')/)
 
     const title = titleMatch ? titleMatch[1] : ''
     const type = typeMatch ? typeMatch[1] : ''
