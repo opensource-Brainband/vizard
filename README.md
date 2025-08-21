@@ -125,7 +125,7 @@ Date,Sales
 
 ## 🖼 Example
 
-<img width="930" height="428" alt="Vizard Example" src="apps/web/docs/example.png" />
+<img width="930" height="428" alt="Image" src="https://github.com/user-attachments/assets/7d73fe31-8728-4181-829e-1521c30d0fd0" />
 
 ## 🤝 Contributing
 
